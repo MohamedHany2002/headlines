@@ -1,0 +1,10 @@
+
+{%for item in items%}
+    {{item.title}}
+    <br>
+    {{item.summary}}
+    <br>
+    {{item.published}}
+    <a href="{{item.link}}">go to</a>
+<hr>
+{%endfor%}
