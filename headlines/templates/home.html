@@ -1,4 +1,12 @@
+<form action="{{url_for('search')}}">
+    <input type="text" name='q'>
+    <button type="submit">search headlines</button>
+</form>
 
+{%if searched%}
+    results for {{searched}} 
+    <br>
+{%endif%}
 {%for item in items%}
     {{item.title}}
     <br>
